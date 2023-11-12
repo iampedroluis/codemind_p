@@ -1,11 +1,14 @@
 import React from "react";
 
+
+const scrolltop =() =>{window.scrollTo(0, 0);} 
+
+
 export const CourseDescrip = () => (
     <div className="container pb-5 col-md-8 col-lg-8 col-xl-8">
     <div className="m-5">
         <h2 className="sub-landing">Fullstack course</h2>
     </div>
-
     <div className="m-3 text-left">
         <p>Our virtual course offers an exciting immersion into web development and programming.
             Throughout this extensive program, you'll explore a wide range of fundamental technologies and tools.
@@ -22,8 +25,8 @@ export const CourseDescrip = () => (
             capable of creating anything from simple web pages to advanced web applications. Get ready for an
             exhilarating learning journey!</p>
     </div>
-    <div className="m-4 text-center">
-        <a href="#login-section"><button className="btn btn-outline-info rounded-pill">Start your journey now</button></a>
+    <div className="btn-login-section text-center">
+        <a onClick={scrolltop}><button className="btn btn-outline-info rounded-pill">Start your journey now</button></a>
     </div>
 </div>
 );

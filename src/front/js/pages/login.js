@@ -53,15 +53,10 @@ export const Login = () => {
                     <div className="row">
                         <h2 className="text-center mb-4">Log <span className="text-color-primary">in</span></h2>
                         <div className="col-md-4 col-lg-3 col-xl-3 order-2 order-md-1">
-                            <div className="d-flex justify-content-center align-items-center mb-4">
-                                <div className="img-index img-logo-login mb-4">
-                                    <img src={logoCM} alt="Logo" className="img-fluid" />
-                                </div>
-                            </div>
                         </div>
                         <div className="col-md-8 col-lg-5 col-xl-6 order-1 order-md-2">
                             <div className="d-flex justify-content-center align-items-center mb-4 flex-column">
-                                <form className="ms-4" onSubmit={handleLogin}>
+                                <form className=""  onSubmit={handleLogin}>
                                     <div className="col-md-12">
                                         {errorLogin && (
                                             <div className="alert alert-danger alert-dismissible fade show mb-2" role="alert" style={{ maxWidth: '100%', margin: '0 auto' }}>
@@ -77,7 +72,7 @@ export const Login = () => {
                                         <input
                                             type="email"
                                             id="inputEmailLogin"
-                                            className="form-control form-control-sm"
+                                            className="form-control form-control-md"
                                             placeholder="Email address"
                                             value={email}
                                             onChange={handleEmailChange}
@@ -87,14 +82,14 @@ export const Login = () => {
                                         <input
                                             type="password"
                                             id="inputPasswordLogin"
-                                            className="form-control form-control-sm"
+                                            className="form-control form-control-md"
                                             placeholder="Password"
                                             value={password}
                                             onChange={handlePasswordChange}
                                         />
                                     </div>
                                     <div className="text-center">
-                                        <button type="submit" className="btn btn-outline-info rounded-pill mb-2" style={{ minWidth: "15em" }}>Log in</button>
+                                        <button type="submit" className="btn btn-outline-info rounded-pill mb-2" style={{ minWidth: "22em" }}>Log in</button>
                                         <div className="text-center mb-3 mt-3">
                                             <p className="text-center fw-bold mx-3 mb-0 text-muted small">OR</p>
                                         </div>
