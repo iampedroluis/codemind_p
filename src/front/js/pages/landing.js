@@ -30,10 +30,10 @@ export const Landing = () => {
                             <div className=" d-flex justify-content-center ">
                             <img src={codeimagen} alt="" className="img-code" />
                             </div>
-                            <div className='d-flex justify-content-center '>
-                                <h4>
-                                    <a href="" className="typewrite ms-2" data-period="2000" data-type='[ "Learn the art of coding", "Enjoy the journey of learning", "Write code and discover", "Practice to master coding" ]'>
-                                        <span className="wrap ms-3"></span>
+                            <div className='d-flex justify-content-center text-black'>
+                                <h4 className="text-black">
+                                    <a href="" className="typewrite   ms-2" data-period="2000" data-type='[ "Learn the art of coding", "Enjoy the journey of learning", "Write code and discover", "Practice to master coding" ]'>
+                                        <span className="wrap ms-3 text-black"></span>
                                     </a>
                                 </h4>
                             </div>
@@ -44,14 +44,14 @@ export const Landing = () => {
                     </div>
                 </div>
             </div>
-            <div className='coursedesc pt-5 vh-100'>
+            <div className='coursedesc bg-dark  pt-5 vh-100'>
                 <CourseDescrip />
             </div>
 
 
             <div id="roadmap-section" className="p-5">
 
-                <div className="container col-md-8 col-lg-5 col-xl-4">
+                <div  className="container col-md-8 col-lg-5 col-xl-4">
                     <RoadMap />
                 </div>
             </div>

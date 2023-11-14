@@ -72,16 +72,17 @@ export const Navbar = () => {
 
 
   const defaultNavbar = (
-<nav className="navbar  navbar-expand-lg navbar-light  navbardefault">
-  <div className="container-fluid container-nav">
-    <Link to={'/'} className="navbar-brand d-flex align-items-center">NameProject</Link>
+    
+<nav className="navbar  navbar-expand-lg bg-black navbardefault">
+  <div className="container-fluid container-nav  ">
+    <Link to={'/'} className="navbar-brand  d-flex align-items-center logo-text">CM_</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse justify-content-end " id="navbarNav">
       <ul className="navbar-nav  align-items-center">
-        <li className="nav-item">
-          <a href="#roadmap-section" className="nav-link-item me-5">Road Map</a>
+        <li className="nav-item mx-3">
+          <a href="#roadmap-section" className="nav-link-item">Road Map</a>
         </li>
         <li className="nav-item">
           <Link to={'/aboutus'} className="nav-link-item">About us</Link>

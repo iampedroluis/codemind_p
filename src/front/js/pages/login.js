@@ -89,15 +89,15 @@ export const Login = () => {
                                         />
                                     </div>
                                     <div className="text-center">
-                                        <button type="submit" className="btn btn-outline-info rounded-pill mb-2" style={{ minWidth: "22em" }}>Log in</button>
+                                        <button type="submit" className="btn btn-outline-dark rounded-pill mb-2" style={{ minWidth: "22em" }}>Log in</button>
                                         <div className="text-center mb-3 mt-3">
                                             <p className="text-center fw-bold mx-3 mb-0 text-muted small">OR</p>
                                         </div>
-                                        <Link to="/registro"><button type="button" className="btn btn-outline-info rounded-pill" style={{ minWidth: "15em" }}>Create new account</button></Link>
+                                        <Link to="/registro"><button type="button" className="btn btn-outline-dark rounded-pill" style={{ minWidth: "15em" }}>Create new account</button></Link>
                                     </div>
 
-                                    <div className="text-center mt-3">
-                                        <Link to="/forwotpassword">
+                                    <div className="text-center  mt-3">
+                                        <Link to="/forwotpassword" className="text-black ">
                                             Forgot your password?
                                         </Link>
                                     </div>

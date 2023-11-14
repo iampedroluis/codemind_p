@@ -44,9 +44,7 @@ body{
 font-size: var(--SmFontSize);
 
 }
-.sub-landing{
-  font-size: var(--XsFontSize);
-}
+
 h1{
     font-family: var(--FuentePrincipal);
     -webkit-text-stroke: 1px var(--ColorPrimario);
@@ -59,7 +57,7 @@ h1{
 h2{
     font-family: var(--FuentePrincipal);
     font-size: var(--SmFontSize);
-    -webkit-text-stroke: 1px var(--ColorPrimario);
+    -webkit-text-stroke: 1px #212529;
     color: transparent;
     font-weight: 900;
     letter-spacing: 0;
@@ -72,7 +70,7 @@ label{
 }
 
 p{
-    color: var(--ColorSecundario);
+    color: #212529;
     font-family: var(--FuenteSecundaria);
     font-weight:lighter;
     font-size: small;  
@@ -93,10 +91,14 @@ p{
 
 .wrap, h3, a{
     text-decoration: none;
-    color: var(--ColorSecundario);
+    color: #212529;
     font-family: var(--FuenteSecundaria);
     font-weight: 400;
 }
+a:hover{
+  color: whitesmoke;
+}
+
 h4{
   text-decoration: none;
     color: var(--ColorCuaternario);
@@ -104,7 +106,7 @@ h4{
     font-weight: 400;
 }
 .text-color-primary{
-    color: var(--ColorPrimario);
+    color: #212529;
 }
 
 .module-title{
@@ -114,7 +116,7 @@ h4{
     font-family: var(--FuentePrincipal);
 }
 input{
-    box-shadow: 0 0 5px var(--ColorPrimario);
+    box-shadow: 0 0 5px #212529;
 }
 /* Elemento de arrastre */
 li {
@@ -131,11 +133,11 @@ li {
 }
   
 ::-webkit-scrollbar-track {
-    background-color: #ffffff47; /* Color de fondo del track del scrollbar */
+    background-color: #00000047; /* Color de fondo del track del scrollbar */
 }
   
 ::-webkit-scrollbar-thumb {
-    background-color: #ffffff47; /* Color del thumb del scrollbar */
+    background-color: #00000047; /* Color del thumb del scrollbar */
     border-radius: 1rem; /* Borde redondeado del thumb del scrollbar */
 }
 
@@ -319,13 +321,30 @@ input[type="text"]:focus {
 }
 
 /* Navbar */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler{
+border: 2px solid rgb(255, 255, 255);
+}
+.navbar-toggler:focus{
+  box-shadow: 0px 0px 5px 1px rgb(255, 255, 255);
+}
 
 .navbardefault{
-  background-color: #E6E6FA;
   position: sticky;
   top: 0;
-  
 }
+
+.logo-text{
+  font-family: var(--FuentePrincipal);
+  font-size: 35px;
+  -webkit-text-stroke: 1px #ffffff;
+  color: transparent;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
 .nav-user-img{
   border: 0px solid transparent;
   border-radius: 50%;
@@ -338,7 +357,7 @@ input[type="text"]:focus {
   border: 1px solid #212529;
 }
 .nav-link-item{
-  color:#212529;
+  color:#ffffff;
   font-size: 16px;
   margin-right: 10px;
   
@@ -349,8 +368,8 @@ input[type="text"]:focus {
 }
 
 .container-nav{
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 90px;
+  margin-right: 90px;
 
 }
 
@@ -369,6 +388,25 @@ input[type="text"]:focus {
 .coursedesc{
   background-color: #eaeaee;
 }
+.sub-landing{
+  font-family: var(--FuentePrincipal);
+  font-size: var(--SmFontSize);
+  -webkit-text-stroke: 1px #eaeaee;
+  color: transparent;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.text-color-secondary{
+  font-family: var(--FuentePrincipal);
+  color: #eaeaee;
+  letter-spacing: 0;
+}
+
+
+.t-white{
+  color: white;
+}
 /* =====================*/
 
 .teachersname{
@@ -380,3 +418,9 @@ input[type="text"]:focus {
   color: black;
   cursor: pointer;
 }
+
+.img-size{
+  width: 70px;
+  height: 70px;
+}
+
