@@ -191,23 +191,26 @@ def seed():
     db.session.commit()
 
 
-# class Module(db.Model):
-#     __tablename__ = 'module'
-#     id = db.Column(db.Integer, primary_key=True)
-#     name = db.Column(db.String(100))
-#     description = db.Column(db.String(250))
-#     type = db.Column(db.String(50))
+class Module(db.Model):
+    __tablename__ = 'module'
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100))
+    img = db.Column(db.String(80000))
+    description = db.Column(db.String(25050))
+    code = db.Column(db.String(800))
+    
 
-#     def __repr__(self):
-#         return f'<Module {self.id}>'
+    def __repr__(self):
+        return f'<Module {self.id}>'
 
-#     def serialize(self):
-#         return {
-#             "id": self.id,
-#             "name": self.name,
-#             "description": self.description,
-#             "type": self.type
-#         }
+    def serialize(self):
+        return {
+            "id": self.id,
+            "name": self.name,
+            "img": self.img,
+            "description": self.description,
+            "code": self.code
+        }
 
 #class ModuleProgress(db.Model):
 #    __tablename__ = 'module_progress'

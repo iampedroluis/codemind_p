@@ -94,9 +94,9 @@ export const Navbar = () => {
   )
 
   const userNavbar = ( 
-<nav className="navbar  navbar-expand-lg navbar-light  navbardefault">
+<nav className="navbar  navbar-expand-lg bg-black navbardefault">
   <div className="container-fluid container-nav">
-    <Link to={'/'} className="navbar-brand d-flex align-items-center">NameProject</Link>
+  <Link to={'/'} className="navbar-brand  d-flex align-items-center logo-text">CM_</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -114,10 +114,9 @@ export const Navbar = () => {
         <li className="nav-item">
           <Link to={'/profile'} className="nav-link"><img src={userImg} className="nav-user-img" alt="User" /></Link>
         </li>
-        <li className="nav-item">
-        <Link to={('/')} onClick={handleLogout} className="nav-link-item"><i class="fa-solid fa-right-from-bracket"></i></Link>
-        </li>
+
       </ul>
+      <Link to={('/')} onClick={handleLogout} className="nav-link-item  off d-flex justify-content-center ms-3 "><i class="fa-solid fa-power-off"></i></Link>
     </div>
   </div>
 </nav>

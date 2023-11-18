@@ -7,6 +7,7 @@ import { CourseDescrip } from '../component/courseDescrip';
 import { useNavigate } from 'react-router-dom';
 import { Context } from "../store/appContext";
 import  codeimagen  from '../../img/codeimagen.png'
+import { ModulosLanding } from "./modulosLanding";
 export const Landing = () => {
     const navigate = useNavigate();
     const { store, actions } = useContext(Context);
@@ -46,8 +47,10 @@ export const Landing = () => {
             </div>
             <div className='coursedesc bg-dark  pt-5 vh-100'>
                 <CourseDescrip />
+            </div >
+            <div className='coursedesc bg-dark  pt-5 vh-100'>
+            <ModulosLanding></ModulosLanding>
             </div>
-
 
             <div id="roadmap-section" className="p-5">
 

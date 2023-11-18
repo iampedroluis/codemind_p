@@ -2,7 +2,7 @@
 This module takes care of starting the API Server, Loading the DB and Adding the endpoints
 """
 from flask import Flask, request, jsonify, url_for, Blueprint
-from api.models import db, User, Exercise, Answers, TokenBlockedList, Teacher, AnswersUser, seed
+from api.models import db, User, Exercise, Answers, TokenBlockedList, Teacher, AnswersUser, seed, Module
 from api.utils import generate_sitemap, APIException
 from flask_bcrypt import Bcrypt
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity, get_jwt
@@ -585,3 +585,25 @@ def decrypt():
         return jsonify({"email": email}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+@api.route('/modules', methods=['POST'])
+def create_module():
+    try:
+        module = Module()
+        module.name = request.json.get('name')
+        module.img = request.json.get('img')
+        module.description= request.json.get('description')
+        module.code = request.json.get('code')
+        db.session.add(module)
+        db.session.commit() 
+        return jsonify({"msg":"modulo add"}) , 201
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+    
+@api.route('/modules', methods=['GET'])
+def get_all_modules():
+    try:
+        modules = Module.query.all()
+        return jsonify(modules=[module.serialize() for module in modules]), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}),500
