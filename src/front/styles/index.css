@@ -111,6 +111,7 @@ h4{
 }
 
 .module-title{
+  
     font-size: var(--MdFontSize);
     font-style: normal;
     font-weight: 900;
@@ -386,15 +387,15 @@ nav{
 }
 
 .off{
-  color: #212529;
-  -webkit-text-stroke: 1px #111111;
+  color: #6d6d6d;
+  -webkit-text-stroke: 1px #3b3b3b;
 
 
 }
 .off:hover{
   color: rgb(255, 255, 255);
   -webkit-text-stroke: 1px #2e2a2a5d;
-  transition-duration: 0.4s;
+  transition-duration: 0.2s;
   
   
 }
@@ -417,6 +418,15 @@ nav{
   font-family: var(--FuentePrincipal);
   font-size: var(--SmFontSize);
   -webkit-text-stroke: 1px #eaeaee;
+  color: transparent;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.sub-landing-b{
+  font-family: var(--FuentePrincipal);
+  font-size: var(--SmFontSize);
+  -webkit-text-stroke: 1px #363636;
   color: transparent;
   font-weight: 900;
   letter-spacing: 0;
@@ -498,18 +508,20 @@ nav{
   border-radius: 10px;
   display: flex;/* Remove this if you don't want the 3D effect */
   padding: 30px;
-  transition: 0.3s;
+  transition: 1s;
+  border: 1px solid #ffffff00;
   
 }
 
 .flip-card:hover .img-module-ex{
-
+  transition-duration: 1s;
   filter: grayscale(0);
 }
 
 .flip-card:hover{
-  border: 1px solid #696969;
+  border: 1px solid #575757;
   border-radius: 10px;
+  transition: 1s;
 }
 
 /* This container is needed to position the front and back side */
@@ -526,6 +538,7 @@ nav{
   width: 100%;
   height: 100%;
   border-radius: 10px;
+  transition: 1s;
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -533,6 +546,7 @@ nav{
   background-color: #bbbbbb00;
   color: black;
   border-radius: 10px;
+  transition:1s;
 }
 
 /* Style the back side */
@@ -573,3 +587,12 @@ img{
 button{
   font-family: 'DM Sans', sans-serif;
 }
+.rounded-pill{
+  transition: 0.5s;
+}
+
+/* UNLOCK */
+.btn-lock:hover ,i{
+  transition: 1s;
+}
+
