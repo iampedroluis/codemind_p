@@ -44,6 +44,12 @@ body{
 
 }
 
+.imput-email{
+  background-color: transparent;
+  border: 0px; 
+  box-shadow: none;
+}
+
 h1{
     font-family: 'Archivo Black', sans-serif;
     -webkit-text-stroke: 1px var(--ColorPrimario);
@@ -63,8 +69,8 @@ h2{
 }
 
 label{
-    color: var(--ColorSecundario);
-    font-family: var(--FuenteSecundaria);
+    color: #111111;
+    font-family: 'DM Sans', sans-serif;
     font-weight:lighter;
 }
 
@@ -76,12 +82,12 @@ p{
 }
 
 .text-line{
-    -webkit-text-stroke: 2px var(--ColorPrimario);
-    color: transparent; 
+    -webkit-text-stroke: 2px #212529;
+    
 }
 
 .bigtext{
-    font-family: var(--FuentePrincipal);
+    font-family:  'Archivo Black', sans-serif;
     font-size: var(--MdFontSize);
     font-weight: 800;
     letter-spacing: 0;
@@ -202,6 +208,24 @@ height: 180px;
     color: whitesmoke;
 }
 
+.btn-round-black{
+  background-color: #111111;
+  color: #E6E6FA;
+}
+.btn-round-black:hover{
+  border: 1px solid #111111;
+  background-color: #E6E6FA;
+}
+
+.btn-round-white{
+  border: 1px solid #111111;
+  background-color: #E6E6FA;
+  color: #111111;
+}
+.btn-round-white:hover{
+  background-color: #111111;
+  color: #E6E6FA;
+}
 /* Footer Cards and modals*/
 .modules-container{
   min-height: 500px;
@@ -254,15 +278,15 @@ height: 180px;
 
 
 input[type="radio"]:checked {
-    background-color: #6610F2; /* Cambia el fondo cuando está seleccionado */
-    border-color: #6610F2; /* Cambia el borde cuando está seleccionado */
+    background-color: #121213; /* Cambia el fondo cuando está seleccionado */
+    border-color: #111111; /* Cambia el borde cuando está seleccionado */
 }
 input[type="text"]:focus {
-    border-color: #6610F2; /* Cambia el color del borde a azul (#007bff) */
+    border-color: #141314; /* Cambia el color del borde a azul  */
     /* Otros estilos opcionales, como grosor del borde o sombra */
     border-width: 2px;
     border-style: solid;
-    box-shadow: 0 0 5px #6610F2(0, 123, 255, 0.5); /* Sombra cuando está enfocado */
+    box-shadow: 0 0 5px #0c0c0c(0, 123, 255, 0.5); /* Sombra cuando está enfocado */
     outline: none; /* Elimina el contorno predeterminado del enfoque */
 }
 
@@ -596,3 +620,10 @@ button{
   transition: 1s;
 }
 
+.arrow-left{
+  font-size: 20px;
+}
+.arrow-left:hover{
+  color:#212529;
+  transition-duration: 1s;
+}

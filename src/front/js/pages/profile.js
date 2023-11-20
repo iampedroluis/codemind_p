@@ -74,10 +74,10 @@ export const Profile = () => {
     }, [store.user.teacher, store.teachers]);
 
     return (
-        <div className="container vh-100 d-flex flex-column justify-content-center">
+        <div className="container  d-flex flex-column justify-content-center mt-4">
             <div className="row mb-4">
-                <div className="col mt-4">
-                    <Link to="/modules"><i className="fa-solid fa-arrow-left arrow-back"></i></Link>
+                <div className="col mt-2">
+                    <Link to="/modules"><i class="fa-solid fa-chevron-left arrow-left"></i></Link>
                 </div>
             </div>
             <div className="row justify-content-center">
@@ -102,9 +102,9 @@ export const Profile = () => {
                             <label className='form-label'>Last Name:</label>
                             <input type="text" className="form-control" id="lastName" name="lastName" value={formData.lastName} onChange={handleChange} />
                         </div>
-                        <div className='mb-3'>
+                        <div className='mb-5'>
                             <label className='form-label'>E-mail:</label>
-                            <input type="text" className="form-control" id="email" name="email" value={formData.email} onChange={handleChange} disabled={true} />
+                            < input type="text" className="form-control imput-email" id="email" name="email" value={formData.email} onChange={handleChange} disabled={true} />
                         </div>
                         {
                             store.user.role === "alumno" && store.user.teacher ? (
@@ -143,12 +143,12 @@ export const Profile = () => {
                         <div className='container '>
                             <div className="row mt-5 d-flex justify-content-between">
                                 <div className="col-6">
-                                    <button type="submit" className="btn btn-primary">
+                                    <button type="submit" className="btn btn-round-black rounded-pill">
                                         Update User
                                     </button>
                                 </div>
                                 <div className='col-6'>
-                                    <Link to={"/changepassword"} className="btn btn-outline-secondary ms-2 text-black ">Change password</Link>
+                                    <Link to={"/changepassword"} className="btn btn-round-white ms-2  rounded-pill">Change password</Link>
                                 </div>
                             </div>
                         </div>

@@ -8,6 +8,8 @@ import { useNavigate } from 'react-router-dom';
 import { Context } from "../store/appContext";
 import  codeimagen  from '../../img/codeimagen.png'
 import { ModulosLanding } from "./modulosLanding";
+import modulesimg from "../../img/modulesimg.png"
+
 export const Landing = () => {
     const navigate = useNavigate();
     const { store, actions } = useContext(Context);
@@ -26,12 +28,12 @@ export const Landing = () => {
         <div className='' id='login-section'>
             <div className='vh-100 mt-5'>
                 <div className='container'>
-                    <div className="row mt-3 pt-3 justify-content-between">
+                    <div className="row mt-3 pt-3 justify-content-between ">
                         <div className="col-md-7 col-lg-3 col-xl-6 order-2 order-md-1">
-                            <div className=" d-flex justify-content-center ">
-                            <img src={codeimagen} alt="" className="img-code" />
+                            <div className=" d-flex justify-content-center mb-4">
+                            <img src={ modulesimg } alt="" className="img-code " />
                             </div>
-                            <div className='d-flex justify-content-center text-black'>
+                            <div className='d-flex justify-content-center text-black '>
                                 <h4 className="text-black">
                                     <a href="" className="typewrite   ms-2" data-period="2000" data-type='[ "Learn the art of coding", "Enjoy the journey of learning", "Write code and discover", "Practice to master coding" ]'>
                                         <span className="wrap ms-3 text-black"></span>
