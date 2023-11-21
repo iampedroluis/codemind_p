@@ -476,13 +476,33 @@ nav{
 
   
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 435px) {
+
+  .img-code{
+    width: 60%;
+    height: auto;
+    margin-top: 25px;
+    
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 1025px) {
   .bg-img {
     background-image: url('https://i.imgur.com/KocPzF2.png');
     background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; 
+  }
+  .img-code{
+    width: auto;
+    height: auto;
+    margin-top: 25px;
   }
 }
 .titulo-modulos{

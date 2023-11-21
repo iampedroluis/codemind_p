@@ -5,8 +5,8 @@ const scrolltop =() =>{window.scrollTo(0, 0);}
 
 
 export const CourseDescrip = () => (
-    <div className="container pb-5 col-md-8 col-lg-8 col-xl-8">
-    <div className="m-5">
+    <div className="container  col-md-8 col-lg-8 col-xl-8 pt-5 ">
+    <div className="">
         <h2 className="sub-landing">Fullstack <span className="text-color-secondary">course</span></h2>
     </div>
     <div className="m-3 text-left">

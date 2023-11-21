@@ -25,11 +25,11 @@ export const Landing = () => {
     }, [navigate, actions]);
 
     const landing = (
-        <div className='' id='login-section'>
-            <div className='vh-100 mt-5'>
-                <div className='container'>
-                    <div className="row mt-3 pt-3 justify-content-between ">
-                        <div className="col-md-7 col-lg-3 col-xl-6 order-2 order-md-1">
+        <div className='' id='login-section mt-5  '>
+            <div className='mt-5'>
+                <div className='container mb-5'>
+                    <div className="row mt-3 pt-3 justify-content-between align-items-center d-flex flex-column flex-md-row">
+                        <div className="col-md-7 col-lg-3 col-xl-6 order-2 order-md-1 d-flex flex-column align-items-center align-items-md-start">
                             <div className=" d-flex justify-content-center mb-4">
                             <img src={ modulesimg } alt="" className="img-code " />
                             </div>
@@ -41,16 +41,16 @@ export const Landing = () => {
                                 </h4>
                             </div>
                         </div>
-                        <div className="col-md-5 col-lg-6 col-xl-6 order-1 order-md-2">
+                        <div className="col-md-5 col-lg-6 col-xl-6 order-1 order-md-2 d-flex align-items-center justify-content-center">
                             <Login />
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='coursedesc bg-dark  pt-5 vh-100'>
+            <div className='coursedesc bg-dark  pb-5'>
                 <CourseDescrip />
             </div >
-            <div className='coursedesc bg-dark  pt-5 vh-100'>
+            <div className='coursedesc bg-dark  mb-4 vh-100'>
             <ModulosLanding></ModulosLanding>
             </div>
 

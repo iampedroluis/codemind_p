@@ -9,7 +9,7 @@ export const Index = () => {
 
     return (
         <div className="container d-flex justify-content-between">
-            <div className="row vh-100  align-items-center">
+            <div className="row   align-items-center">
                 <div className="col-md-6 text-center">
                     <div className="embed-responsive embed-responsive-16by9">
                         <img src={logoCM} alt="Logo" className="embed-responsive-item img-fluid" />

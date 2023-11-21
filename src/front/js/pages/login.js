@@ -48,7 +48,7 @@ export const Login = () => {
 
     return (
         <>
-            <section className="d-flex align-items-center justify-content-start">
+            <section className="d-flex align-items-center justify-content-start ">
                 <div className="container">
                     <div className="row">
                         <h2 className="text-center mb-4">Log <span className="text-color-primary">in</span></h2>
