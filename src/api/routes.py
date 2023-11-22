@@ -528,6 +528,7 @@ def progress_users_modules():
 def endpoint_mail():
     body = request.get_json()
     email = body["email"]
+    print(email)
     user = User.query.filter_by(email=email).first()
     if user is None:
         user = Teacher.query.filter_by(email=email).first()

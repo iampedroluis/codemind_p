@@ -34,7 +34,7 @@ const LockedModal = () => {
             <h1 className="modal-title sub-landing fs-5" id="lockedModalLabel">Locked</h1>
             <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div className="modal-body">
+          <div className="modal-body myModal-body">
             <p className="second-desc text-white">You lack the required experience to unlock this module.</p>
           </div>
           <div className="modal-footer">

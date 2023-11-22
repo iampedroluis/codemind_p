@@ -8,9 +8,9 @@ export const AboutUs = () => {
 
         <div>
         <div className=" mb-5">
-          <Link to="/">
-            <i className="fa-solid fa-arrow-left arrow-back"></i>
-          </Link>
+        <Link to="/">
+        <i className="fa-solid fa-chevron-left arrow-left"></i>
+      </Link>
         </div>
           <div className="mb-5">
             <h2 className="text-line ">Welcome!</h2>

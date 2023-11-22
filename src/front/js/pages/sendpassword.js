@@ -4,11 +4,11 @@ import { Context } from "../store/appContext";
 export const SendPassword = () => {
 const { store, actions} = useContext(Context)
     return (
-        <div className="container  d-flex flex-column justify-content-center">
+        <div className="container mt-4  d-flex flex-column justify-content-center">
         <div className="mb-5">
-            <Link to="/">
-                <i className="fa-solid fa-arrow-left arrow-back"></i>
-            </Link>
+        <Link to="/">
+        <i className="fa-solid fa-chevron-left arrow-left"></i>
+      </Link>
         </div>
         <div className="row justify-content-center">
             <div className="col-md-6 text-center mb-5">

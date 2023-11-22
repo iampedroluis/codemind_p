@@ -26,9 +26,9 @@ const handleRecovery = async(e) =>{
 return (
   <div className="container mt-3 d-flex flex-column justify-content-center">
   <div className="mb-4">
-      <Link to="/">
-          <i className="fa-solid fa-arrow-left arrow-back"></i>
-      </Link>
+  <Link to="/">
+  <i className="fa-solid fa-chevron-left arrow-left"></i>
+</Link>
   </div>
   <div className="row justify-content-center">
       <div className="col-md-5 text-center me-2">
@@ -46,13 +46,12 @@ return (
                   className="form-control"
                   id="email"
                   placeholder=""
-                  value={email}
                   onChange={(e) => setEmail(e.target.value)}
               />
           </div>
           <div className="row mt-4">
               <div className="col text-center">
-                  <button type="submit" className="btn btn-info" onClick={handleRecovery}>
+                  <button type="submit" className="btn btn-outline-dark rounded-pill" onClick={handleRecovery}>
                       Send Password
                   </button>
               </div>

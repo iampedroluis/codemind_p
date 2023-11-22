@@ -486,11 +486,12 @@ const getState = ({ getStore, getActions, setStore }) => {
         }
       },
       recoveryPassword: async (email) => {
+        console.log(email)
         const url = process.env.BACKEND_URL + "/api/requestpassword";
         const options = {
           method: "POST",
           body: JSON.stringify({
-            email,
+            "email": email
           }),
           headers: {
             "Content-Type": "application/json",

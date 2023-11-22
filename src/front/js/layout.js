@@ -58,7 +58,7 @@ const Layout = () => {
             <Route element={<ChangePassword />} path="/changepassword"/>
             <Route element={<ForwotPassword />} path="/forwotpassword" />
             <Route element={<SendPassword />} path="/sendpassword" />
-            <Route element={<AboutUs />} path="/about" />
+            <Route element={<AboutUs />} path="/aboutus" />
             <Route element={<RoadMap />} path="/roadmap" />
             {store.token ? (
               <>

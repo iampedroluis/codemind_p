@@ -19,7 +19,7 @@ export const Progress = () => {
       <div className="d-flex justify-content-center align-items-center m-5"><h1 className="fs-2 text-center">¡Keep going, you are almost there!</h1></div>
       <div className="row d-flex justify-content-between pt-5 pb-5">
         <div className="offset-1 col-4">
-          <h3 className="text-center text-primary blockquote"><strong>Your Full Stack progress: {roundedProgress}%</strong></h3>
+          <h3 className="text-center text-text-dark  blockquote"><strong>Your Full Stack progress: {roundedProgress}%</strong></h3>
         </div>
         <div className="col-1"></div>
         <div className="col-6">
@@ -36,17 +36,17 @@ export const Progress = () => {
         </div>
       </div>
 
-      <div className="row d-flex justify-content-between align-items-center m-3 border border-dark border-2 rounded bg-gradient shadow" style={{ backgroundColor: '#18283b' }}>
+      <div className="row d-flex justify-content-between align-items-center m-3 border border-dark border-2 rounded bg-gradient shadow">
         <div className="d-flex justify-content-center col-3">
           <img
             src="https://generation-sessions.s3.amazonaws.com/ad60b588835c42a878fbc4ab00aaadec/img/html5-logo-and-wordmark-1@2x.png"
-            className="card-img-top card-animation img-fluid mt-2 mb-2 align-item-center"
+            className="card-img-top  img-fluid mt-2 mb-2 align-item-center"
             alt="HTML5 Logo"
             style={{ maxWidth: "90px", maxHeight: "90px" }}
           />
         </div>
         <div className="d-flex justify-content-end align-items-center col-3 mt-2">
-          <h4 className="text-center blockquote">HTML5:</h4>
+          <h4 className="text-center">HTML5:</h4>
         </div>
 
 
@@ -65,12 +65,12 @@ export const Progress = () => {
       </div>
 
 
-      <div className="row d-flex justify-content-between align-items-center m-3 border border-dark border-2 rounded bg-gradient shadow" style={{ backgroundColor: '#18283b' }}>
+      <div className="row d-flex justify-content-between align-items-center m-3 border border-dark border-2 rounded bg-gradient shadow" >
         <div className="d-flex justify-content-center
                col-3">
           <img
             src="https://generation-sessions.s3.amazonaws.com/ad60b588835c42a878fbc4ab00aaadec/img/1200px-css-3-1@2x.png"
-            className="card-img-top card-animation img-fluid m-2 align-item-center"
+            className="card-img-top  img-fluid m-2 align-item-center"
             alt="CSS Logo"
             style={{ maxWidth: "90px", maxHeight: "90px" }}
           />
@@ -93,18 +93,18 @@ export const Progress = () => {
           </div>
         </div>
       </div>
-      <div className="row d-flex justify-content-between align-items-center m-3 border border-dark border-2 rounded bg-gradient shadow" style={{ backgroundColor: '#18283b' }}>
+      <div className="row d-flex justify-content-between align-items-center m-3 border border-dark border-2 rounded bg-gradient shadow" >
         <div className="d-flex justify-content-center
                col-3">
           <img
             src="https://generation-sessions.s3.amazonaws.com/ad60b588835c42a878fbc4ab00aaadec/img/unofficial-javascript-logo-2-1@2x.png"
-            className="card-img-top card-animation img-fluid m-2 align-item-center"
+            className="card-img-top  img-fluid m-2 align-item-center"
             alt="JavaScript Logo"
             style={{ maxWidth: "90px", maxHeight: "90px" }}
           />
         </div>
         <div className="d-flex justify-content-end align-items-center col-3 mt-2">
-          <h4 className="text-end blockquote">JS:</h4>
+          <h4 className="text-end ">JS:</h4>
         </div>
 
 
