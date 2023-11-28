@@ -99,6 +99,7 @@ p{
     color: #212529;
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
+    cursor:pointer;
   
 }
 a:hover{

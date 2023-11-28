@@ -15,7 +15,7 @@ export const Landing = () => {
     const { store, actions } = useContext(Context);
   
     const [landingRender, setLandingRender] = useState(null);
-
+    const scrolltop =() =>{window.scrollTo(0, 0);} 
     useEffect(() => {
             if (store.token){
                 navigate('/modules');
@@ -60,6 +60,8 @@ export const Landing = () => {
                     <RoadMap />
                 </div>
             </div>
+            <a onClick={scrolltop}><i class="fa-solid fa-angle-up text-center d-flex  justify-content-center "></i></a>
+            
         </div>
     );
 
