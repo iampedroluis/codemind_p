@@ -100,7 +100,7 @@ export const Registro = () => {
               </label>
               <input
                 type="text"
-                className="form-control  text-white border-primary"
+                className="form-control  border-primary"
                 id="firstName"
                 name="firstName"
                 value={formData.firstName}
@@ -114,7 +114,7 @@ export const Registro = () => {
               </label>
               <input
                 type="text"
-                className="form-control  text-white border-primary"
+                className="form-control  border-primary"
                 id="lastName"
                 name="lastName"
                 value={formData.lastName}
@@ -128,7 +128,7 @@ export const Registro = () => {
               </label>
               <input
                 type="email"
-                className="form-control  text-white border-primary"
+                className="form-control   border-primary"
                 id="email"
                 name="email"
                 value={formData.email}
@@ -142,7 +142,7 @@ export const Registro = () => {
               </label>
               <input
                 type="password"
-                className="form-control text-white border-primary"
+                className="form-control border-primary"
                 id="password"
                 name="password"
                 value={formData.password}
@@ -156,7 +156,7 @@ export const Registro = () => {
               </label>
               <input
                 type="password"
-                className="form-control  text-white border-primary"
+                className="form-control   border-primary"
                 id="confirmPassword"
                 name="confirmPassword"
                 value={formData.confirmPassword}
